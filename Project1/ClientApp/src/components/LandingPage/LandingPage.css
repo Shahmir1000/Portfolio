@@ -1,0 +1,24 @@
+.portfolio-image {
+    max-width: 80%; /* Adjust as needed */
+    height: auto;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+}   
+  
+.portfolio-image:hover {
+    transform: scale(1.05); /* Slightly enlarges the image on hover */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}
+
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to right, #2c3e50, #4b6cb7); /* Black gradient background */
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+    margin: 0;
+    padding: 0;
+}
