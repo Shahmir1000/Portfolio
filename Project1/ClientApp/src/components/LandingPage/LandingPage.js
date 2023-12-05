@@ -1,7 +1,7 @@
 // LandingPage.js
 import React from 'react';
-import './LandingPage.css'; // Assuming you have a CSS file for styles
-import ShahmirImage from '../../Assets/ShahmirWFCU.jfif';
+import './LandingPage.css';
+import ShahmirImage from '../../Assets/ShahmirWFCU.jpg';
 import { Container, Col, Row } from 'reactstrap';
 
 function LandingPage() {

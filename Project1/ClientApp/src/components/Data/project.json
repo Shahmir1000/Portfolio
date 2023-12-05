@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+          "id": 1,
+          "companyId": "1",
+          "name": "Admin Tracker",
+          "componentName": "AdminTracker",
+          "description": "Redesigning the corporate website for a modern look and feel.",
+          "status": "Deployed",
+          "startDate": "2023-01-15",
+          "endDate": "2023-04-30",
+          "skillsId": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+          "YoutubeLink": "",
+          "GithubLink": "",
+          "ProjectLink": ""
+        }
+    ]
+}

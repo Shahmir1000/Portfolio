@@ -1,0 +1,217 @@
+{
+    "skills": [
+      {
+        "id": 1,
+        "name": "JavaScript",
+        "categoryId": 1,
+        "proficiencyId": 3
+      },
+      {
+        "id": 2,
+        "name": "Python",
+        "categoryId": 1,
+        "proficiencyId": 1
+      },
+      {
+        "id": 3,
+        "name": "Project Management",
+        "categoryId": "Management",
+        "proficiencyId": 2
+      },
+      {
+        "id": 4,
+        "name": "Adobe Photoshop",
+        "categoryId": "Design",
+        "proficiencyId": 1
+      },
+      {
+        "id": 5,
+        "name": "T-SQL",
+        "categoryId": "Database",
+        "proficiencyId": 3
+      },
+    {
+        "id": 6,
+        "name": "PostgreSQL",
+        "categoryId": "Database",
+        "proficiencyId": "Intermidiate"
+      },
+      {
+        "id": 7,
+        "name": "MySQL",
+        "categoryId": "Database",
+        "proficiencyId": 1
+      },
+      {
+        "id": 8,
+        "name": "Public Speaking",
+        "categoryId": 6,
+        "proficiencyId": 1
+      },
+      {
+        "id": 9,
+        "name": "Power Point Presentation",
+        "categoryId": 6,
+        "proficiencyId": 1
+      },
+      {
+        "id": 10,
+        "name": "Active Listening",
+        "categoryId": 6,
+        "proficiencyId": 4
+      },
+      {
+        "id": 11,
+        "name": "Technical Writing",
+        "categoryId": 6,
+        "proficiencyId": 3
+      },
+      {
+        "id": 12,
+        "name": "Clarity and Concision",
+        "categoryId": 6,
+        "proficiencyId": 3
+      },
+      {
+        "id": 13,
+        "name": "Problem-Solving Communication",
+        "categoryId": 6,
+        "proficiencyId": 3
+      },
+      {
+        "id": 14,
+        "name": "Team Collaboration",
+        "categoryId": 6,
+        "proficiencyId": 2
+      },
+      {
+        "id": 15,
+        "name": "Feedback",
+        "categoryId": 6,
+        "proficiencyId": 2
+      },
+      {
+        "id": 16,
+        "name": "Conflict Resolution",
+        "categoryId": 6,
+        "proficiencyId": 3
+      },
+      {
+        "id": 17,
+        "name": "Negotiation",
+        "categoryId": 6,
+        "proficiencyId": 1
+      },
+      {
+        "id": 18,
+        "name": "C#",
+        "categoryId": 1,
+        "proficiencyId": 3
+      },
+      {
+        "id": 19,
+        "name": "C",
+        "categoryId": 1,
+        "proficiencyId": 2
+      },
+      {
+        "id": 20,
+        "name": "MatLAB",
+        "categoryId": 1,
+        "proficiencyId": 1
+      },
+      {
+        "id": 21,
+        "name": "Java",
+        "categoryId": 1,
+        "proficiencyId": 2
+      },
+      {
+        "id": 22,
+        "name": "TypeScript",
+        "categoryId": 1,
+        "proficiencyId": 2
+      },
+      {
+        "id": 23,
+        "name": "C",
+        "categoryId": 1,
+        "proficiencyId": 2
+      }
+    ],
+    "Category": [
+        {
+          "id": 1,
+          "categoryName": "Programming Languages",
+          "description": "Languages used for coding and software development."
+        },
+        {
+          "id": 2,
+          "categoryName": "Web Development",
+          "description": "Skills related to developing and maintaining websites."
+        },
+        {
+          "id": 3,
+          "categoryName": "Database Management",
+          "description": "Skills related to database creation, management, and administration."
+        },
+        {
+          "id": 4,
+          "categoryName": "Project Management",
+          "description": "Skills in organizing, planning, and executing projects."
+        },
+        {
+          "id": 5,
+          "categoryName": "Design",
+          "description": "Skills related to graphic design, UI/UX design."
+        },
+        {
+          "id": 6,
+          "categoryName": "Communication",
+          "description": "Skills related to effective verbal and written communication."
+        },
+        {
+          "id": 7,
+          "categoryName": "Data Analysis",
+          "description": "Skills in analyzing, interpreting, and presenting data."
+        },
+        {
+          "id": 8,
+          "categoryName": "Networking",
+          "description": "Skills related to setting up and managing computer networks."
+        },
+        {
+          "id": 9,
+          "categoryName": "Security",
+          "description": "Skills related to cybersecurity and information protection."
+        },
+        {
+          "id": 10,
+          "categoryName": "Machine Learning",
+          "description": "Skills related to developing machine learning models and algorithms."
+        }
+    ],
+    "Proficiency": [
+        {
+          "id": 1,
+          "Name": "Beginner",
+          "description": "Possesses a basic understanding of the skill. Able to perform simple tasks under guidance."
+        },
+        {
+          "id": 2,
+          "Name":  "Intermediate",
+          "description": "Has a working knowledge of the skill with the ability to perform tasks independently. Familiar with most concepts but may need help with more complex issues."
+        },
+        {
+          "id": 3,
+          "Name": "Advanced",
+          "description": "Possesses in-depth knowledge and can handle complex tasks. Requires little to no assistance and can provide guidance to others."
+        },
+        {
+          "id": 4,
+          "Name": "Expert",
+          "description": "Has comprehensive and authoritative knowledge of the skill. Able to innovate, lead in projects, and provide strategic guidance at the highest level."
+        }
+      ]
+  }
+  

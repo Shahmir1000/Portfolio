@@ -1,0 +1,37 @@
+{
+    "companies": [
+      {
+        "id": 1,
+        "name": "WFCU Credit Union",
+        "location": "Windsor, ON",
+        "industry": "Banking",
+        "title": "Systems Developer",
+        "description": "Developed and maintained a variety of applications for the credit u",
+        "startDate": "2022-01-20",
+        "endDate": "current",
+        "skillsId": []
+      },
+      {
+        "id": 2,
+        "name": "Canada House Wellness Group",
+        "location": "Barrie, ON",
+        "industry": "Health Care",
+        "description": "CPM software for the cannabis industry",
+        "startDate": "2015-01-01",
+        "endDate": "2015-12-31",
+        "skillsId": []
+      },
+      {
+        "id": 3,
+        "name": "Ambiant Control Systems",
+        "location": "Milton, ON",
+        "industry": "Trades",
+        "description": "Customer Management System for HVAC companies",
+        "startDate": "2015-01-01",
+        "endDate": "2015-12-31",
+        "skillsId": []
+      }
+      // ... other companies
+    ]
+  }
+  

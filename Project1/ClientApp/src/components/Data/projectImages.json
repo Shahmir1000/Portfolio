@@ -1,0 +1,29 @@
+{
+    "images": [
+      {
+        "id": 1,
+        "projectId": 1,
+        "url": "http://example.com/images/image1.jpg",
+        "description": "Homepage redesign concept"
+      },
+      {
+        "id": 2,
+        "projectId": 1,
+        "url": "http://example.com/images/image2.jpg",
+        "description": "Mobile responsive view"
+      },
+      {
+        "id": 3,
+        "projectId": 2,
+        "url": "http://example.com/images/image3.jpg",
+        "description": "App initial wireframe"
+      },
+      {
+        "id": 4,
+        "projectId": 2,
+        "url": "http://example.com/images/image4.jpg",
+        "description": "App final design mockup"
+      }
+      // ... more images
+    ]
+  }
