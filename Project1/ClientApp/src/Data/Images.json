@@ -1,0 +1,12 @@
+{
+    "images": [
+      {
+        "id": 1,
+        "projectId": 1,
+        "name": "AdminTrackerCardImage",
+        "extension": "png",
+        "url": "AdminTracker/AdminTrackerCardImage.png",
+        "description": "Homepage of Admin Tracker"
+      }
+    ]
+  }
