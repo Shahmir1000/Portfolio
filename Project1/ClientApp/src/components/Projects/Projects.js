@@ -32,8 +32,6 @@ import { loadImage } from "Utility/imageLoader";
 * */
 
 function Projects() {
-  console.log(loadImage);
-  const IMG_PATH = "Assets/Projects/";
   const projects = projectsData.projects;
   const images = ImagesData.images;
 
@@ -47,10 +45,11 @@ function Projects() {
         let cardImage = projectImages.find(
           (image) => image.name === `${project.componentName}CardImage`
         );
+        let ImageURL = (cardImage !== null && cardImage !== undefined) && loadImage(cardImage.url)
         return (
           <div id={index}>
             <ProjectCard
-              url={cardImage?.url  loadImage(cardImage.url)}
+              url = {ImageURL}
               title={project.name}
               description={project.description}
               skills={project.skills}

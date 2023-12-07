@@ -37,7 +37,7 @@ function ProjectCard({ url, title, description, skills }) {
         width: "18rem",
       }}
     >
-      <img alt="Card" src={url} />
+      <img alt="Card" src={url ? url : "https://picsum.photos/300/200"} />
       <CardBody>
         <CardTitle tag="h5">{title}</CardTitle>
         <CardText>{description}</CardText>
@@ -54,7 +54,7 @@ function ProjectCard({ url, title, description, skills }) {
     </Card>
   );
 }
-ProjectCard.prototype = {
+ProjectCard.protoTypes = {
   url: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
