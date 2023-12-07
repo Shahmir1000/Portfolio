@@ -29,17 +29,18 @@ import {
           
 
 * */
-function ProjectCard({ name, description, skills }) {
+function ProjectCard({ url, title, description, skills }) {
   return (
     <Card
+      className="portfolio-image"
       style={{
         width: "18rem",
       }}
     >
-      <img alt="Card" src="https://picsum.photos/300/200" />
+      <img alt="Card" src={url} />
       <CardBody>
-        <CardTitle tag="h5">Card Title</CardTitle>
-        <CardText>This is some text within a card body.</CardText>
+        <CardTitle tag="h5">{title}</CardTitle>
+        <CardText>{description}</CardText>
       </CardBody>
       <ListGroup flush>
         <ListGroupItem>An item</ListGroupItem>
@@ -54,14 +55,16 @@ function ProjectCard({ name, description, skills }) {
   );
 }
 ProjectCard.prototype = {
-  name: PropTypes.string,
-  descriptions: PropTypes.string,
+  url: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
   skills: PropTypes.array,
 };
 
 ProjectCard.defaultProps = {
-  name: "No Name",
-  descriptions: "No Description",
+  url: "https://picsum.photos/300/200",
+  title: "No Name",
+  description: "No Description",
   skills: [],
 };
 

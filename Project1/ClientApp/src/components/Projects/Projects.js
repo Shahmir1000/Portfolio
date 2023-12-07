@@ -4,8 +4,9 @@ import "./Projects.css"; // Assuming you have a CSS file for styles
 //import ShahmirImage from "../../Assets/ShahmirWFCU.jfif";
 import { Container, Col, Row } from "reactstrap";
 import ProjectCard from "./ProjectCard/ProjectCard";
-import projectsData from "../../Data/project.json";
-import ImagesData from "../../Data/Images.json";
+import projectsData from "Data/project.json";
+import ImagesData from "Data/Images.json";
+import { loadImage } from "Utility/imageLoader";
 
 /*
           "id": 1,
@@ -31,45 +32,32 @@ import ImagesData from "../../Data/Images.json";
 * */
 
 function Projects() {
-    const IMG_PATH = './Assets/Projects/'
-    const projects = projectsData.projects;
-    const images = ImagesData.images;
-    console.log(projects);
-    console.log(images);
-    return (
+  console.log(loadImage);
+  const IMG_PATH = "Assets/Projects/";
+  const projects = projectsData.projects;
+  const images = ImagesData.images;
 
+  return (
     <Container>
-        <h1>Projects</h1>
-        {
-                projects.map((project,index) => {
-                    console.log(project);
-                    let projectImages = images.filter(image =>image.projectId === project.id);
-                    let cardImage = projectImages.find(image => image.name === `${project.componentName}CardImage`);
-                    console.log(projectImages);
-                    console.log(`${project.name}CardImage`);
-                    console.log(cardImage);
-                    return (
-                        <div id={index} className="projects-container">
-                        <Container>
-                            <Row>
-                            <Col className="col-6">
-                                <h1>{project.name}</h1>
-                                <p>{project.description}</p>
-                            </Col>
-                            <Col className="col-6">
-                                <img
-                                src={require(`${IMG_PATH}${cardImage.url}`)}
-                                alt="Portfolio"
-                                className="portfolio-image"
-                                />
-                            </Col>
-                            </Row>
-                        </Container>
-                        </div>
-                    );
-                })
-        }
-        <ProjectCard></ProjectCard>
+      <h1>Projects</h1>
+      {projects.map((project, index) => {
+        let projectImages = images.filter(
+          (image) => image.projectId === project.id
+        );
+        let cardImage = projectImages.find(
+          (image) => image.name === `${project.componentName}CardImage`
+        );
+        return (
+          <div id={index}>
+            <ProjectCard
+              url={cardImage?.url  loadImage(cardImage.url)}
+              title={project.name}
+              description={project.description}
+              skills={project.skills}
+            ></ProjectCard>
+          </div>
+        );
+      })}
     </Container>
   );
 }

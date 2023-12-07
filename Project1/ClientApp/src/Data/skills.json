@@ -14,32 +14,32 @@
       },
       {
         "id": 3,
-        "name": "Project Management",
+        "name": 4,
         "categoryId": "Management",
         "proficiencyId": 2
       },
       {
         "id": 4,
         "name": "Adobe Photoshop",
-        "categoryId": "Design",
+        "categoryId": 5,
         "proficiencyId": 1
       },
       {
         "id": 5,
         "name": "T-SQL",
-        "categoryId": "Database",
+        "categoryId": 3,
         "proficiencyId": 3
       },
     {
         "id": 6,
         "name": "PostgreSQL",
-        "categoryId": "Database",
-        "proficiencyId": "Intermidiate"
+        "categoryId": 3,
+        "proficiencyId": 2
       },
       {
         "id": 7,
         "name": "MySQL",
-        "categoryId": "Database",
+        "categoryId": 3,
         "proficiencyId": 1
       },
       {
@@ -137,6 +137,36 @@
         "name": "C",
         "categoryId": 1,
         "proficiencyId": 2
+      },
+      {
+        "id": 24,
+        "name": "Database Design",
+        "categoryId": 3,
+        "proficiencyId": 3
+      },
+      {
+        "id": 25,
+        "name": "Database Administration",
+        "categoryId": 3,
+        "proficiencyId": 2
+      },
+      {
+        "id": 26,
+        "name": "Database Security",
+        "categoryId": 3,
+        "proficiencyId": 2
+      },
+      {
+        "id": 27,
+        "name": "ORM (Object-Relational Mapping)",
+        "categoryId": 3,
+        "proficiencyId": 3
+      },
+      {
+        "id": 28,
+        "name": "Stored Procedures and Triggers",
+        "categoryId": 3,
+        "proficiencyId": 3
       }
     ],
     "Category": [
