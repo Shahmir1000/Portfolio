@@ -1,20 +1,36 @@
 import React from "react";
-import { Form, Label, FormGroup, Input, Button } from "reactstrap";
-import { useForm, SubmitHandler } from "react-hook-form";
+import {
+  Form,
+  Label,
+  FormGroup,
+  Input,
+  Button,
+  FormFeedback,
+} from "reactstrap";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import { DevTool } from "@hookform/devtools";
 
 function SkillForm({ id }) {
+  const schema = yup.object().shape({
+    name: yup.string().trim().nullable().required("Name is required"),
+  });
   const {
     register,
     handleSubmit,
     watch,
     formState: { errors },
     control,
-  } = useForm();
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
 
   const onSubmit = (data) => console.log(data);
   console.log(watch("name")); // watch input value by passing the name of it
 
+  const { ref, ...registerName } = register("name");
+  const { ref, ...registerCategory } = register("category");
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
     <div>
@@ -26,10 +42,28 @@ function SkillForm({ id }) {
             name="name"
             placeholder="Skill Name"
             type="text"
-            {...register("name")}
+            innerRef={ref}
+            {...registerName}
           />
+          {errors?.name && (
+            <FormFeedback> {errors?.name?.message}</FormFeedback>
+          )}
         </FormGroup>
-        <Button color="primary" onSubmit={handleSubmit(onSubmit)}>
+        <FormGroup>
+          <Label for={`name${id}`}>Category</Label>
+          <Input
+            id={`category${id}`}
+            name="category"
+            placeholder="Category"
+            type="text"
+            innerRef={ref}
+            {...registerCategory}
+          />
+          {errors?.name && (
+            <FormFeedback> {errors?.name?.message}</FormFeedback>
+          )}
+        </FormGroup>
+        <Button type="submit" color="primary">
           Save
         </Button>
       </Form>
