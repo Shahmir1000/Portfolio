@@ -15,6 +15,7 @@ import { DevTool } from "@hookform/devtools";
 function SkillForm({ id }) {
   const schema = yup.object().shape({
     name: yup.string().trim().nullable().required("Name is required"),
+    category: yup.string().trim().nullable().required("Category is required"),
   });
   const {
     register,
@@ -27,12 +28,12 @@ function SkillForm({ id }) {
   });
 
   const onSubmit = (data) => console.log(data);
-  console.log(watch("name")); // watch input value by passing the name of it
+  console.log(watch("name"));
 
-  const { ref, ...registerName } = register("name");
-  const { ref, ...registerCategory } = register("category");
+  const { ref: nameRef, ...registerName } = register("name");
+  const { ref: categoryRef, ...registerCategory } = register("category");
+
   return (
-    /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
     <div>
       <Form onSubmit={handleSubmit(onSubmit)}>
         <FormGroup>
@@ -42,25 +43,27 @@ function SkillForm({ id }) {
             name="name"
             placeholder="Skill Name"
             type="text"
-            innerRef={ref}
             {...registerName}
+            innerRef={nameRef}
+            invalid={!!errors.name}
           />
           {errors?.name && (
             <FormFeedback> {errors?.name?.message}</FormFeedback>
           )}
         </FormGroup>
         <FormGroup>
-          <Label for={`name${id}`}>Category</Label>
+          <Label for={`category${id}`}>Category</Label>
           <Input
             id={`category${id}`}
             name="category"
             placeholder="Category"
             type="text"
-            innerRef={ref}
             {...registerCategory}
+            innerRef={categoryRef}
+            invalid={!!errors.category}
           />
-          {errors?.name && (
-            <FormFeedback> {errors?.name?.message}</FormFeedback>
+          {errors?.category && (
+            <FormFeedback>{errors.category.message}</FormFeedback>
           )}
         </FormGroup>
         <Button type="submit" color="primary">
@@ -73,17 +76,3 @@ function SkillForm({ id }) {
 }
 
 export default SkillForm;
-
-// <form onSubmit={handleSubmit(onSubmit)}>
-//   {/* register your input into the hook by invoking the "register" function */}
-//   <input defaultValue="test" {...register("example")} />
-
-//   {/* include validation with required or other standard HTML validation rules */}
-//   <input {...register("exampleRequired", { required: true })} />
-//   {/* errors will return when field validation fails  */}
-//   {errors.exampleRequired && <span>This field is required</span>}
-
-//   <input type="submit" />
-{
-  /* </form> */
-}
