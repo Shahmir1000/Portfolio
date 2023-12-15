@@ -14,8 +14,8 @@
       },
       {
         "id": 3,
-        "name": 4,
-        "categoryId": "Management",
+        "name": "Management",
+        "categoryId": 4,
         "proficiencyId": 2
       },
       {
@@ -172,74 +172,74 @@
     "Category": [
         {
           "id": 1,
-          "categoryName": "Programming Languages",
+          "name": "Programming Languages",
           "description": "Languages used for coding and software development."
         },
         {
           "id": 2,
-          "categoryName": "Web Development",
+          "name": "Web Development",
           "description": "Skills related to developing and maintaining websites."
         },
         {
           "id": 3,
-          "categoryName": "Database Management",
+          "name": "Database Management",
           "description": "Skills related to database creation, management, and administration."
         },
         {
           "id": 4,
-          "categoryName": "Project Management",
+          "name": "Project Management",
           "description": "Skills in organizing, planning, and executing projects."
         },
         {
           "id": 5,
-          "categoryName": "Design",
+          "name": "Design",
           "description": "Skills related to graphic design, UI/UX design."
         },
         {
           "id": 6,
-          "categoryName": "Communication",
+          "name": "Communication",
           "description": "Skills related to effective verbal and written communication."
         },
         {
           "id": 7,
-          "categoryName": "Data Analysis",
+          "name": "Data Analysis",
           "description": "Skills in analyzing, interpreting, and presenting data."
         },
         {
           "id": 8,
-          "categoryName": "Networking",
+          "name": "Networking",
           "description": "Skills related to setting up and managing computer networks."
         },
         {
           "id": 9,
-          "categoryName": "Security",
+          "name": "Security",
           "description": "Skills related to cybersecurity and information protection."
         },
         {
           "id": 10,
-          "categoryName": "Machine Learning",
+          "name": "Machine Learning",
           "description": "Skills related to developing machine learning models and algorithms."
         }
     ],
     "Proficiency": [
         {
           "id": 1,
-          "Name": "Beginner",
+          "name": "Beginner",
           "description": "Possesses a basic understanding of the skill. Able to perform simple tasks under guidance."
         },
         {
           "id": 2,
-          "Name":  "Intermediate",
+          "name":  "Intermediate",
           "description": "Has a working knowledge of the skill with the ability to perform tasks independently. Familiar with most concepts but may need help with more complex issues."
         },
         {
           "id": 3,
-          "Name": "Advanced",
+          "name": "Advanced",
           "description": "Possesses in-depth knowledge and can handle complex tasks. Requires little to no assistance and can provide guidance to others."
         },
         {
           "id": 4,
-          "Name": "Expert",
+          "name": "Expert",
           "description": "Has comprehensive and authoritative knowledge of the skill. Able to innovate, lead in projects, and provide strategic guidance at the highest level."
         }
       ]
